@@ -3,7 +3,7 @@
 	<div class="widget">
 		<div class="widget-search">
 			<form action="/posts/search" method="GET">
-				<input class="search-input form-control" type="text" name="look" placeholder="Search">
+				<input class="search-input form-control" type="text" name="look" placeholder="Ara">
 				<button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
 			</form>
 
@@ -12,7 +12,7 @@
 	<!-- /Search -->
 
 	<div class="widget">
-		<h3 class="mb-3">Categories</h3>
+		<h3 class="mb-3">Kategoriler</h3>
 		<div class="widget-category">
 			{{#each categories}}
 			<a href="/posts/category/{{_id}}">{{name}}<span>({{num_of_posts}})</span></a>
@@ -22,7 +22,7 @@
 
 	<!-- Posts sidebar -->
 	<div class="widget">
-		<h3 class="mb-3">Latest Posts</h3>
+		<h3 class="mb-3">Son Gönderiler</h3>
 		{{#each (limit posts 2)}}
 		<!-- single post -->
 		<div class="widget-post">

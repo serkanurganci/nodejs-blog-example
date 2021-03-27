@@ -39,7 +39,7 @@ a{
     color: var(--mainGreen);
     text-decoration: none;
     transition: .2s opacity;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 1.2rem;
 }
 
@@ -691,6 +691,14 @@ BLOG SECTION
     line-height: 40px;
     background-color: transparent;
     color: var(--mainGreen);
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+#aside .widget-search .search-btn:focus{
+    outline:none;
+    border: none;
+    transform: scale(1.05);
 }
 
 /* -- category sidebar -- */
@@ -945,8 +953,20 @@ span.writer {
     color: var(--mainGreen);
 }
 
+.admin-nav-list{
+    display:flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.admin-nav-list .nav-link{
+    font-weight: 900;
+}
 
+.page-image-user{
+    background:linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)),url("../img/user.jpg") no-repeat center;
+}
 
-
-
+.page-image-admin{
+    background:linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)),url("../img/adminBg.jpg") no-repeat center;
+}

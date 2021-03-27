@@ -1,5 +1,4 @@
-import * as mdb from 'mdb-ui-kit'; // lib
-import { Input } from 'mdb-ui-kit'; // module
+
 
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
@@ -18,5 +17,23 @@ $(document).ready(function(){
   smartSpeed: 300
   });
 });
+
+
+
+function fixNav(){
+    if(window.innerWidth < 991){
+        document.getElementById('mainNav').classList.add('shrink')
+    }else{
+        document.getElementById('mainNav').classList.remove('shrink')
+    }
+}
+
+
+
+window.addEventListener('resize',fixNav)
+document.addEventListener('DOMContentLoaded',()=>{
+    fixNav();
+})
+
 
 

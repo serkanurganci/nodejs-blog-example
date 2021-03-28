@@ -1,13 +1,18 @@
-
-
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('nav').addClass('shrink');
+function fixNavWidth() {
+    if(window.innerWidth < 991 || window.scrollY > 50){
+        document.getElementById('mainNav').classList.add('shrink')
+    }else{
+        document.getElementById('mainNav').classList.remove('shrink')
     }
-    else {
-        $('nav').removeClass('shrink');
-    }
-});
+}
+
+console.log(window.scrollY)
+
+window.addEventListener('resize',fixNavWidth)
+window.addEventListener('scroll',fixNavWidth)
+document.addEventListener('DOMContentLoaded',()=>{
+    fixNavWidth();
+})
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
@@ -20,20 +25,11 @@ $(document).ready(function(){
 
 
 
-function fixNav(){
-    if(window.innerWidth < 991){
-        document.getElementById('mainNav').classList.add('shrink')
-    }else{
-        document.getElementById('mainNav').classList.remove('shrink')
-    }
-}
 
 
 
-window.addEventListener('resize',fixNav)
-document.addEventListener('DOMContentLoaded',()=>{
-    fixNav();
-})
+
+
 
 
 

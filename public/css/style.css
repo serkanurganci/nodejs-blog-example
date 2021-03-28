@@ -141,6 +141,16 @@ nav.navbar-container {
 	color: white;
 	border: 0;
 	background-color: #27ae60;
+    transition:0.3s;
+}
+
+#mainNav.shrink .navbar-toggler:hover{
+    color: #10161A;
+}
+
+#mainNav .navbar-toggler:focus{
+    border: none;
+    outline: none;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -970,3 +980,10 @@ span.writer {
 .page-image-admin{
     background:linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)),url("../img/adminBg.jpg") no-repeat center;
 }
+
+@media only screen and (max-width: 991px) {
+    .navbar-brand{
+        font-size: 1rem !important;
+        margin-left: 1rem;
+    }
+  }

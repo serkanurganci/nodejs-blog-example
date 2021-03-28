@@ -1,12 +1,3 @@
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('nav').addClass('shrink');
-    }
-    else {
-        $('nav').removeClass('shrink');
-    }
-});
-
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
   items: 1,
@@ -15,3 +6,13 @@ $(document).ready(function(){
   smartSpeed: 300
   });
 });
+
+const navbar = document.getElementById("mainNav");
+
+window.addEventListener("resize",function(){
+
+    console.log(windiw.scrollY)
+
+})
+
+console.log(window.scrollY)

@@ -1,6 +1,14 @@
 # NodeJsBlog
 A blog website which built with NodeJs and Handlebars.
 
+## Available Scripts
+In the project directory, you can run:
+
+`nodemon app.js`
+
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
+
 ## Dependencies
 
 * body-parser: 1.19.0
